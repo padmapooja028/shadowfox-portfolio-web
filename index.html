@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Padma Pooja S — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Padma Pooja S</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+   
+    <section id="home" class="hero card">
+      <div class="hero-left">
+        <h1>Hello, I'm <span style="color:var(--accent);">Padma Pooja S</span> <span class="wave">👋</span></h1>
+        <p class="lead">A 3rd-year Computer Science student who loves building web apps, solving problems and learning new technologies. Currently exploring data science and full-stack web development.</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn secondary" href="#projects">See Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img src="E:\shadowfox\medium-shot-woman-posing-indoors.jpg" alt="Profile picture">
+      </div>
+    </section>
+
+    
+    <section id="about" class="card about">
+      <div class="bio">
+        <h2>About Me</h2>
+        <p style="margin-top:8px;">I am a dedicated student with hands-on experience in small web projects and academic assignments. I enjoy turning ideas into real projects and learning best practices in software development.</p>
+        <p class="edu"><strong>Education:</strong> B.Tech — Computer Science (3rd year), Ramco Institute of Technology (2023-2027)</p>
+        <p style="margin-top:6px; color:var(--muted);">Based in: Rajapalayam</p>
+      </div>
+    </section>
+
+    
+    <section id="projects">
+      <h2 style="margin-bottom:10px;">Projects</h2>
+      <div class="projects-grid">
+        <article class="proj card">
+          <h3>Project 1 — Portfolio Website</h3>
+          <p>A personal portfolio website built with HTML, CSS and little JavaScript. Shows projects, skills and contact form.</p>
+          <a href="#">View code</a>
+        </article>
+
+        <article class="proj card">
+          <h3>Project 2 — Weather Predictor</h3>
+          <p>A small ML project that predicts temperature using historical data and simple models. (Academic)</p>
+          <a href="#">View report</a>
+        </article>
+
+        <article class="proj card">
+          <h3>Project 3 — Todo App</h3>
+          <p>Simple To-Do app with local storage to save tasks. Practiced DOM manipulation and event handling.</p>
+          <a href="#">Try demo</a>
+        </article>
+
+        <article class="proj card">
+          <h3>Project 4 — Mini Blog</h3>
+          <p>A static blog template using only HTML and CSS, suitable for learning responsive layouts and typography.</p>
+          <a href="#">Open</a>
+        </article>
+      </div>
+    </section>
+
+   
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <p style="color:var(--muted); margin-top:8px;">Some technologies and tools I often use:</p>
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">Git</div>
+        <div class="skill">Bootstrap</div>
+      </div>
+    </section>
+
+    
+    <section id="contact" class="card">
+      <h2>Resume & Contact</h2>
+      <div class="resume-row" style="margin-top:10px;">
+        <a class="download" href="#" download>Download Resume (PDF)</a>
+        <div style="color:var(--muted);">Or fill the contact form to message me directly.</div>
+      </div>
+
+      <form id="contactForm" style="margin-top:14px;" onsubmit="return validateForm(event);">
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Your email" required />
+        </div>
+        <textarea id="message" placeholder="Your message" required></textarea>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <button class="btn" type="submit">Send Message</button>
+          <div id="formMsg" style="color:var(--muted); font-size:0.95rem;"></div>
+        </div>
+      </form>
+
+      <div style="margin-top:14px; display:flex; gap:10px;">
+        <a href="#" class="btn secondary">LinkedIn</a>
+        <a href="#" class="btn secondary">GitHub</a>
+        <a href="#" class="btn secondary">Twitter</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ by <strong>Padma Pooja S</strong> — © <span id="year"></span></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
